@@ -2244,7 +2244,7 @@ input, select, textarea {
 	}
 
 		#about p.style1 {
-			font-size: 1.5em;
+			font-size: 1.0em;
 			letter-spacing: 0.075em;
 		}
 
@@ -2479,15 +2479,15 @@ input, select, textarea {
 
 		/* Intro */
 
-			#intro {
+			#about {
 				padding-bottom: 7em;
 			}
 
-				#intro p.style1 {
+				#about p.style1 {
 					font-size: 1.25em;
 				}
 
-				#intro p.style2 {
+				#about p.style2 {
 					font-size: 2.25em;
 				}
 
@@ -2561,7 +2561,7 @@ input, select, textarea {
 
 		/* Intro */
 
-			#intro p.style3 {
+			#about p.style3 {
 				width: auto;
 			}
 
@@ -2929,7 +2929,7 @@ input, select, textarea {
 
 		/* Intro */
 
-			#intro {
+			#about {
 				text-align: center;
 				padding-right: 2em;
 				padding-left: 2em;
@@ -2937,11 +2937,11 @@ input, select, textarea {
 				margin: 0 auto;
 			}
 
-				#intro p.style1 {
+				#about p.style1 {
 					margin-bottom: 1.5em;
 				}
 
-				#intro p.style2 {
+				#about p.style2 {
 					font-size: 1.5em;
 					letter-spacing: 0.05em;
 					line-height: 1.25em;
