@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
 
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1613,6 +1607,8 @@ input, select, textarea {
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
+				max-height: 100px;
+				object-fit: cover;
 			}
 
 		.image.featured {
@@ -2046,6 +2042,33 @@ input, select, textarea {
 
 /* Header */
 
+		@keyframes chbg {
+			0% {
+			background:url(../images/1.jpg);
+			background-size:cover
+			}
+			20% {
+			background:url(../images/2.jpg);
+			background-size:cover
+			}
+			40% {
+			background:url(../images/4.jpg);
+			background-size:cover
+			}
+			60% {
+			background:url(../images/5.jpg);
+			background-size:cover
+			}
+			80% {
+			background:url(../images/6.jpg);
+			background-size:cover
+			}
+			100% {
+			background:url(../images/7.jpg);
+			background-size:cover
+			}
+		}
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2061,7 +2084,9 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		/* background: url("../../images/banner.jpg") center center; */
+		background: url("../images/home.jpg") no-repeat;
+		animation: chbg 15s infinite linear;
 		background-size: cover;
 		padding: 0;
 	}
@@ -2073,7 +2098,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: url("../images/home.jpg") no-repeat;
+			/* background: url("../images/home.jpg") no-repeat; */
 			/* background: url("../images/video-f.gif") no-repeat; */
 			background-size: cover;
 		}
@@ -2211,19 +2236,19 @@ input, select, textarea {
 				color: #fff;
 			}
 
-/* Intro */
+/* about */
 
-	#intro {
+	#about {
 		padding-bottom: 8em;
 		text-align: center;
 	}
 
-		#intro p.style1 {
+		#about p.style1 {
 			font-size: 1.5em;
 			letter-spacing: 0.075em;
 		}
 
-		#intro p.style2 {
+		#about p.style2 {
 			font-weight: 700;
 			color: #fff;
 			border-radius: 0.35em;
@@ -2235,12 +2260,12 @@ input, select, textarea {
 			margin-bottom: 1em;
 		}
 
-			#intro p.style2 a {
+			#about p.style2 a {
 				color: inherit;
 				text-decoration: none;
 			}
 
-		#intro p.style3 {
+		#about p.style3 {
 			font-size: 1.1em;
 			width: 48em;
 			margin: 0 auto;
@@ -2256,13 +2281,13 @@ input, select, textarea {
 		margin-top: 5em;
 	}
 
-/* Highlights */
+/* programmes */
 
-	#highlights .highlight {
+	#programmes .highlight {
 		text-align: center;
 	}
 
-		#highlights .highlight h3 {
+		#programmes .highlight h3 {
 			color: #bb0303;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
@@ -2540,9 +2565,9 @@ input, select, textarea {
 				width: auto;
 			}
 
-		/* Highlights */
+		/* programmes */
 
-			#highlights .highlight {
+			#programmes .highlight {
 				max-width: 40em;
 				margin-left: auto;
 				margin-right: auto;
